@@ -99,3 +99,6 @@ img.medium {
 .rating span {
   color: #ff8000;
 }
+.rating span:last-child {
+  color: #404040;
+}
