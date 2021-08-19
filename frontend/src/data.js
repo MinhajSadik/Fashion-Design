@@ -15,7 +15,7 @@ const data = {
             _id:'2',
             name: 'Shirt & Suit',
             category: 'Suit',
-            image: './images/p8.jpg',
+            image: './images/p4.jpg',
             pirce: '330',
             brand: 'Nike',
             rating: 4.50,
