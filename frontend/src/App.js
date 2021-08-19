@@ -1,8 +1,11 @@
 import { React } from 'react';
-import Products from './Components/Products/Products';
-import data from './data';
+import { BrowserRouter, Route } from 'react-router-dom';
+import HomeScreen from './Screens/HomeScreen';
+import ProductScreen from './Screens/ProductScreen';
 function App() {
-  return (<div className="grid-container">
+  return (
+    <BrowserRouter>
+  <div className="grid-container">
   <header className="row">
     <div>
       <a className="brand" href="/">Fashion Design</a>
@@ -13,16 +16,13 @@ function App() {
     </div>
   </header>
   <main>
-    <div className="row center">
-      {
-        data.products.map((product)=> (
-          <Products key={product._id} product={product}/>
-        ))
-      }
-    </div>
+    <Route path='/product/:id' component={ProductScreen}></Route>
+    <Route path='/' component={HomeScreen} exact></Route>
   </main>
   <footer className="row center">All Right Reserved By MinhajSadik</footer>
-</div>);
+</div>
+</BrowserRouter>
+);
 }
 
 export default App;
