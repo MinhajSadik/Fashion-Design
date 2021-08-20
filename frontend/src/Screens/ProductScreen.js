@@ -10,7 +10,7 @@ const ProductScreen = (props) => {
     return (<div>
         <div className="row top">
             <div className="col-2">
-                <img className="large" src={product.image} alt="{product.name}"></img>
+            <img className="large" src={product.image} alt={product.name} />
             </div>
             <div className="col-1">
                 <ul>
@@ -18,15 +18,15 @@ const ProductScreen = (props) => {
                         <h1>{product.name}</h1>
                     </li>
                     <li>
-                        <Rating>
-                            rating={product.rating} numReviews={product.numReviews}
+                        <Rating
+                            rating={product.rating} numReviews={product.numReviews}>
                         </Rating>
                     </li>
                     <li>
                         Price: ${product.price}
                     </li>
                     <li>
-                        Description: <p>{product.description}</p>
+                        Description: {product.description}
                     </li>
                 </ul>
             </div>
@@ -41,7 +41,7 @@ const ProductScreen = (props) => {
                         </li>
                         <li>
                             <div className="row">
-                                <div>Status</div>
+                                <div>Status:-</div>
                                 <div>
                                     {product.countInStock > 0 ? 
                                     (<span className="success">In Stock</span>)
