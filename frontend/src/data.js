@@ -5,7 +5,7 @@ const data = {
             name: 'Slim Shirt & Pants',
             category: 'Shirt',
             image: './images/p1.jpg',
-            pirce: '130',
+            price: '130',
             brand: 'Nike',
             rating: 5.00,
             numReviews:10,
